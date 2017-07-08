@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wing</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen" title="no title">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <button type="submit" class="btn btn-success" id="see-all-tasks">See all Task in my area</button>
+  <!-- TO-DO: SHOW CUSTOMER'S ADVERTISED TASKS HERE -->
+  <div class="outstanding-tasks"><div>
+    <h1>Tasks</h1>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th># of Posts</th>
+								<th>See Author's Posts</th>
+								<th>New Post</th>
+								<th>Delete Author</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="form-row">
+								<form id="author-form">
+									<td colspan="4">
+										<input placeholder="Enter a name" id="author-name" type="text" />
+									</td>
+									<td><button type="submit" class="btn btn-success">Create Author</button>
+									</td>
+								</form>
+							</tr>
+						</tbody>
+					</table>
+  </div>
+
+      <!-- Custom Script -->
+      <script src="assets/js/index.js" type="text/javascript"></script>
+</body>
+</html>
